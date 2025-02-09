@@ -87,6 +87,8 @@ priceActionMax.sendKeys("3000");
 
 driver.findElement(By.xpath("(//div[@class='price-input']/following-sibling::div)[2]")).click();
 
+Thread.sleep(3000);
+		
 //Selecting color
  WebElement color = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'Black')]")));
  scroll.moveToElement(color).click().perform();
